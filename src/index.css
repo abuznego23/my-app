@@ -126,7 +126,7 @@ label {
   margin: 5px;
 }
 
-button:disabled {
+button.picker-btn:disabled {
   border-color: rgb(191,191,191);
   color: rgb(191,191,191);
   cursor: default;

@@ -358,8 +358,10 @@ class Booking extends React.Component {
       endDate: null,
       showPriceSummary: false,
       numberNights: null,
-      numberInfants: null
+      numberInfants: null,
+      focusedInput: null
     }
+    this.submitBooking = this.submitBooking.bind(this);
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -367,6 +369,17 @@ class Booking extends React.Component {
     let endDateSet = nextState.endDate != null;
     if(nextState.showPriceSummary !== endDateSet){
       this.setState({ showPriceSummary: endDateSet })
+    }
+  }
+
+  submitBooking() {
+    console.log(this)
+    if(this.state.startDate && this.state.endDate){
+      //Submit form and take to confirmation page!
+      console.log("Submitting booking!")
+      document.getElementById("booking-btn").disabled = true;
+    } else {
+      this.setState({ focusedInput: (this.state.startDate ? "endDate" : "startDate")});
     }
   }
 
@@ -386,7 +399,7 @@ class Booking extends React.Component {
         <Guests ctx={this} limit={this.state.guestLimit} />
         <PriceSummary ctx={this} />
         <div className="submit-section">
-          <button type="submit" id="booking-btn">{bookingButtonText}</button>
+          <button type="submit" id="booking-btn" onClick={this.submitBooking}>{bookingButtonText}</button>
           <div className="xsf">You won't be charged yet</div>
         </div>
         <ListingInfo showPriceSummary={this.state.showPriceSummary}/>
