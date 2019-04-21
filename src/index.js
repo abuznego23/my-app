@@ -373,9 +373,8 @@ class Booking extends React.Component {
   }
 
   submitBooking() {
-    console.log(this)
     if(this.state.startDate && this.state.endDate){
-      //Submit form and take to confirmation page!
+      //Submit form and take to confirmation page only when we have valid dates!
       console.log("Submitting booking!")
       document.getElementById("booking-btn").disabled = true;
     } else {
