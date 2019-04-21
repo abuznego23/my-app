@@ -1,0 +1,197 @@
+.booking {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(72,72,72) !important;
+  margin: 15px;
+  padding: 20px;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(191,191,191);
+  width: 360px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.top-info {
+  height: 70px;
+  border-bottom: solid;
+  border-color: rgb(191,191,191);
+  border-width: 1px
+}
+
+button {
+  cursor: pointer;
+  outline-style: none;
+  outline-color: transparent;
+}
+
+.xsf {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sf {
+  font-size: 14px;
+}
+
+.guest-picker {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.stars {
+  color: rgb(0, 132, 137);
+}
+
+#ratings-btn {
+  background: none;
+  border: none;
+  padding: 0px;
+}
+
+label {
+  margin-top: 0.5rem;
+  margin-bottom: 0rem !important;
+  font-size: 12.5px;
+  font-weight: bold;
+}
+
+#guest-button {
+  background: none;
+  color: rgb(72,72,72);
+  width: 100%;
+  text-align: left;
+  border-color: rgb(191,191,191);
+  margin-bottom: 1.25rem;
+}
+
+.submit-section {
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: solid;
+  border-color: rgb(191,191,191);
+  border-width: 1px;
+}
+
+#booking-btn {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: rgb(255, 90, 95);
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 5%;
+}
+
+.line {
+  display: table !important;
+  width: 100%;
+  margin: 5px;
+}
+
+.cell {
+  display: table-cell !important;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main {
+  margin-bottom: 0px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.bottom {
+  font-size: 13px;
+}
+
+.dropdown-menu {
+  padding: 15px !important;
+}
+
+.picker-btn {
+  color: rgb(0, 132, 137);
+  border-radius: 50%;
+  border-color: rgb(0, 132, 137);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 5px;
+}
+
+button:disabled {
+  border-color: rgb(191,191,191);
+  color: rgb(191,191,191);
+  cursor: default;
+}
+
+.total-price {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.price-summary {
+  margin-bottom: 15px;
+}
+
+.ps {
+  font-size: 13px;
+  border-bottom: solid;
+  border-color: rgb(191,191,191);
+  border-width: 1px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+p {
+  padding-top: 20px;
+  margin: 0px !important;
+}
+
+.tt {
+  background: white;
+  color: rgb(191,191,191);
+  border-color: rgb(191,191,191);
+  font-size: 10px;
+  border-radius: 50%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right:6px;
+}
+
+button.tt:hover {
+  color: rgb(0, 132, 137);
+  border-color: rgb(0, 132, 137);
+}
+
+.bottom-info {
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+img {
+  width: 55px;
+  line-height: 50px;
+  height: 50px;
+}
+
+.minus {
+  margin-right: 20px;
+}
+
+.plus {
+  margin-left: 20px;
+}
+
+.count {
+  display: table-cell;
+  width: 5px;
+}
